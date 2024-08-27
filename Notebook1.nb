@@ -1,0 +1,148 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5017,        140]
+NotebookOptionsPosition[      3862,        112]
+NotebookOutlinePosition[      4310,        129]
+CellTagsIndexPosition[      4267,        126]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Sources", "Subsection",
+ CellChangeTimes->{{3.933715721945139*^9, 
+  3.933715764554842*^9}},ExpressionUUID->"3628d274-865a-8c48-afeb-\
+d8607057ee3b"],
+
+Cell["\<\
+https://en.wikipedia.org/wiki/Airy_disk
+https://www.cambridgeincolour.com/tutorials/diffraction-photography.htm
+https://en.wikipedia.org/wiki/F-number\
+\>", "Text",
+ CellChangeTimes->{{3.9337157499608345`*^9, 3.933715759654413*^9}, {
+  3.9337170248390846`*^9, 
+  3.933717025004751*^9}},ExpressionUUID->"fd8dc808-7f7f-c740-a6bb-\
+f362bac24230"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Airy Disks", "Section",
+ CellChangeTimes->{{3.9337158936342583`*^9, 3.933715897808584*^9}, 
+   3.9337159373286457`*^9},ExpressionUUID->"d5134f09-bd8e-b74d-b702-\
+6a91e7730089"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"focalLength", " ", "=", " ", 
+    RowBox[{"100", 
+     TemplateBox[{
+       InterpretationBox["\[InvisibleSpace]", 1], "\"mm\"", "millimeters", 
+       "\"Millimeters\""},
+      "Quantity"]}]}], ";"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pupilDiameter", " ", "=", " ", 
+   RowBox[{"focalLength", "/", "fNumber"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"numericalAperture", " ", "=", " ", 
+  FractionBox["1", 
+   SqrtBox[
+    RowBox[{
+     RowBox[{"4", 
+      SuperscriptBox["fNumber", "2"]}], "+", "1"}]]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"q1", " ", "=", " ", 
+   RowBox[{"1.22", " ", "*", " ", 
+    FractionBox["\[Lambda]", 
+     RowBox[{"2", "a"}]]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.933715953053816*^9, 3.9337159581463985`*^9}, {
+   3.933716014258806*^9, 3.933716034587158*^9}, {3.9337160798372974`*^9, 
+   3.9337160937595997`*^9}, 3.9337163180913754`*^9, {3.9337167231324825`*^9, 
+   3.933716757515173*^9}, {3.933716788722233*^9, 3.9337168091384354`*^9}, {
+   3.9337168925802803`*^9, 3.933716941306711*^9}, 3.9337169721691666`*^9, {
+   3.9337171915831203`*^9, 3.9337172267226925`*^9}, {3.9337172576259937`*^9, 
+   3.9337172609651966`*^9}},ExpressionUUID->"ee1c629d-367e-fe46-9a3f-\
+9e97236eda6b"],
+
+Cell[BoxData["None"], "Output",
+ CellChangeTimes->{3.933716022832714*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"f29e6dcc-c36f-464a-bbf1-bb2cd33a0e9a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "URLFetch", "invhttp", 
+   "\"A library error occurred. The raw details are: \\\"libcurl error \
+(\\!\\(\\*RowBox[{\\\"6\\\"}]\\)): \\!\\(\\*RowBox[{\\\"\\\\\\\"Could not \
+resolve host: api.wolframalpha.com\\\\\\\"\\\"}]\\)\\\"\"", 2, 2, 3, 
+   22394774118816598321, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9337169825968857`*^9},
+ CellLabel->"",ExpressionUUID->"e4c360fe-0b62-2b4a-8203-c747b8e4b30b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "WolframAlpha", "kbserr", 
+   "\"Request to knowledgebase server \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"api.wolframalpha.com\\\\\\\"\\\"}]\\) failed \
+with error code \\!\\(\\*RowBox[{\\\"None\\\"}]\\).\"", 2, 2, 4, 
+   22394774118816598321, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.933716982670429*^9},
+ CellLabel->"",ExpressionUUID->"46c8f1cd-3089-8c4c-8b5c-71d5b1023973"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.933715901379175*^9, 
+  3.933715902722891*^9}},ExpressionUUID->"f1da08d2-6751-ff41-962d-\
+4ea3097fd25b"]
+}, Open  ]]
+},
+WindowSize->{718.5, 735},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a4216a75-f7d5-1941-9d92-1e3bb44df967"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 155, 3, 54, "Subsection",ExpressionUUID->"3628d274-865a-8c48-afeb-d8607057ee3b"],
+Cell[738, 27, 353, 8, 81, "Text",ExpressionUUID->"fd8dc808-7f7f-c740-a6bb-f362bac24230"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1128, 40, 182, 3, 67, "Section",ExpressionUUID->"d5134f09-bd8e-b74d-b702-6a91e7730089"],
+Cell[CellGroupData[{
+Cell[1335, 47, 1292, 30, 134, "Input",ExpressionUUID->"ee1c629d-367e-fe46-9a3f-9e97236eda6b"],
+Cell[2630, 79, 151, 2, 32, "Output",ExpressionUUID->"f29e6dcc-c36f-464a-bbf1-bb2cd33a0e9a"],
+Cell[2784, 83, 464, 9, 28, "Message",ExpressionUUID->"e4c360fe-0b62-2b4a-8203-c747b8e4b30b"],
+Cell[3251, 94, 428, 9, 28, "Message",ExpressionUUID->"46c8f1cd-3089-8c4c-8b5c-71d5b1023973"]
+}, Open  ]],
+Cell[3694, 106, 152, 3, 28, "Input",ExpressionUUID->"f1da08d2-6751-ff41-962d-4ea3097fd25b"]
+}, Open  ]]
+}
+]
+*)
+
